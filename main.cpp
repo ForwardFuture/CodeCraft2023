@@ -6,7 +6,6 @@
 #include <iostream>
 #include "namespace.h"
 #include "decision.h"
-#include "iomanip"
 
 char map2[N][N];
 int temp_desk_num[N][N];
@@ -72,9 +71,10 @@ int main()
 	{
 
 		
-		output << "--------------------------------------------" << endl;
+		output << "============================================" << endl;
 		output << "framenumber=" << frame_number << endl;
 		output << endl;
+		
 		
 
 		reload_occupied();
@@ -104,6 +104,8 @@ int main()
 		char is_OK[10];
 		scanf("%s", is_OK);
 		// 初始化完毕
+
+		if (seed == seeds[4]) continue;
 
 		if (!init_dc)
 		{
