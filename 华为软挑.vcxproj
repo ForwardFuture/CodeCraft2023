@@ -145,6 +145,7 @@
     <ClInclude Include="geometry.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="namespace.h" />
+    <ClInclude Include="pack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="car.cpp" />
@@ -153,6 +154,7 @@
       <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</SDLCheck>
     </ClCompile>
     <ClCompile Include="namespace.cpp" />
+    <ClCompile Include="pack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

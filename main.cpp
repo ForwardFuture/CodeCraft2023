@@ -6,6 +6,7 @@
 #include <iostream>
 #include "namespace.h"
 #include "decision.h"
+#include "iomanip"
 
 char map2[N][N];
 int temp_desk_num[N][N];
@@ -50,7 +51,7 @@ void init()
 
 int main()
 {
-	//output.open("test.txt", ios::out);
+	output.open("test.txt", ios::out);
 	for (int k = 1; k <= 101; k++)
 		scanf("%s", &map[k][1]);
 	for (int k = 1; k <= 100; k++)
@@ -70,11 +71,10 @@ int main()
 	while (scanf("%d %d", &frame_number, &money))
 	{
 
-		/*
-		output << "============================================" << endl;
+		
+		output << "--------------------------------------------" << endl;
 		output << "framenumber=" << frame_number << endl;
 		output << endl;
-		*/
 		
 
 		reload_occupied();
@@ -104,8 +104,6 @@ int main()
 		char is_OK[10];
 		scanf("%s", is_OK);
 		// 初始化完毕
-
-		if (seed == seeds[4]) continue;
 
 		if (!init_dc)
 		{
@@ -155,6 +153,6 @@ int main()
 	}
 
 	//fdebug.close();
-	//output.close();
+	output.close();
 	return 0;
 }
